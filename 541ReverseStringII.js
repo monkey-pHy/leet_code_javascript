@@ -1,6 +1,7 @@
 var reverseStr = function(s, k) {
-     var str1 = s.slice(0,k).split('').reverse().join('');
-     s=str1+s.slice(k);
+     for(let i=0;i<s.length;i+=2*k){
+          s = s.substr(0,i)+s.substr(i,k).split('').reverse().join('')+s.substr(i+k);
+     }
      return s;
 };
 var s = "abcdefg";
