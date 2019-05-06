@@ -9,5 +9,6 @@ var reverseVowels = function(s) {
             s[i] = t[j++];
         }
     }
+    return s.join('');
 
 };
