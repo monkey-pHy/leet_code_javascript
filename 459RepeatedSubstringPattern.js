@@ -3,4 +3,4 @@ var repeatedSubstringPattern = function(s) {
     return str.slice(1,str.length-1).includes(s);
 };
 var s = "abab";
-console.log(repeatedSubstringPattern(s)) 
+console.log(repeatedSubstringPattern(s));
